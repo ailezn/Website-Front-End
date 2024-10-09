@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="container mx-auto p-4">
+                    <header className="flex justify-between items-center py-4">
+                        <div className="text-2xl font-bold">Zelia</div>
+                        <nav className="space-x-4">
+                            <a href="#" className="hover:text-gray-400">Home</a>
+                            <a href="#" className="hover:text-gray-400">About</a>
+                            <a href="#" className="hover:text-gray-400">Portfolio</a>
+                        </nav>
+                        <button className="bg-orange-500 text-white px-4 py-2 rounded-full">Contact</button>
+                    </header>
+                    <main>
+                        <section className="text-center py-16">
+                            <h1 className="text-5xl font-bold">Zelia</h1>
+                            <h2 className="text-4xl font-bold">Informathic Student</h2>
+                            <p className="text-gray-400 mt-4">Universitas Teknologi Yogyakarta</p>
+                            <div className="mt-8">
+                                <img src="https://placehold.co/200x200" alt="Profile" className="mx-auto rounded-full border-4 border-white" />
+                            </div>
+                            <div className="flex justify-center space-x-4 mt-8">
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin"></i> LinkedIn</a>
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-medium"></i> Medium</a>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Bit about me</h3>
+                            <p className="text-gray-400 mt-4">Nama lengkapku Zelia Latifah, NPM 5220411418</p>
+                            <button className="bg-orange-500 text-white px-4 py-2 rounded-full mt-4">Download CV</button>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">My Best Services</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-paint-brush text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Web Design</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-code text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Web Development</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-bullhorn text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Marketing</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-camera text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Photography</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-copy text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Copy Paste</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-tasks text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">Organizing</h4>
+                                    <p className="text-gray-200 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Latest Portfolio</h3>
+                            <p className="text-gray-400 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 1" className="rounded-lg" />
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 2" className="rounded-lg" />
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 3" className="rounded-lg" />
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 4" className="rounded-lg" />
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 5" className="rounded-lg" />
+                                <img src="https://placehold.co/200x200" alt="Portfolio item 6" className="rounded-lg" />
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-trophy text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">15 National Awards</h4>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-smile text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">1500+ Happy Customers</h4>
+                                </div>
+                                <div className="bg-gradient-to-r from-orange-400 to-pink-500 p-4 rounded-lg">
+                                    <i className="fas fa-heart text-2xl"></i>
+                                    <h4 className="text-xl font-bold mt-2">2700+ Lovely Feedbacks</h4>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="text-center py-16">
+                            <h3 className="text-3xl font-bold">Let's Talk with Me!</h3>
+                            <p className="text-gray-400 mt-4">I am always open to discuss your project, improve your online presence or help with your UX/UI design challenges.</p>
+                            <div className="mt-8">
+                                <button className="bg-orange-500 text-white px-4 py-2 rounded-full">Contact Me</button>
+                            </div>
+                            <div className="flex justify-center space-x-4 mt-8">
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-facebook"></i></a>
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i></a>
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i></a>
+                                <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin"></i></a>
+                            </div>
+                        </section>
+                    </main>
+                    <footer className="text-center py-4">
+                        <p className="text-gray-400">Created by Zarrex | All rights reserved</p>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
